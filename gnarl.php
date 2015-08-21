@@ -27,7 +27,7 @@ class gnarl{
       return $this->redir;
     }else{
       header("HTTP/1.0 404 Not Found");
-      include(404_INCLUDE);
+      include(INCLUDE_404);
     }
   }
   
