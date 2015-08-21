@@ -75,7 +75,7 @@ class gnarl{
   
   public function storeHash(){
     $db = new db();
-    $res = $db->q("insert into urls (`hash`,`url`,`ip`,`datetime`) values('$this->hash','$this->url','$_SERVER[REMOTE_ADDR]',NOW())");
+    $res = $db->q("insert into urls (`hash`,`url`,`ip`) values('$this->hash','$this->url','$_SERVER[REMOTE_ADDR]')");
   }
   
   public function validate($url){
